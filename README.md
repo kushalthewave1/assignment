@@ -1,6 +1,6 @@
-# NC-Themed ePortfolio
+# Personal Kushal Neupane ePortfolio
 
-A multi-page, responsive ePortfolio themed on Nepali Congress colors (red, green, white). It demonstrates understanding of:
+A multi-page, responsive ePortfolio themed which have colors (red, green, white). It demonstrates understanding of:
 1) What is Full Stack Development
 2) HTML
 3) CSS
