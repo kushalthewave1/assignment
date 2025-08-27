@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ePortfolio: Full Stack, HTML, CSS, Bootstrap, JavaScript - Nepali Congress theme" />
+    <title>JavaScript Project — Number Detector | ePortfolio</title>
+    <!-- Bootstrap 5 CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon (simple emoji-based) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇳🇵</text></svg>">
+
+  </head>
+  <body data-page="project">
+    <!-- Accessible Navbar with Nepali Congress colors -->
+    <nav class="navbar navbar-expand-lg shadow-sm nc-navbar" aria-label="Primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html" aria-label="Home">
+          <span class="nc-badge" aria-hidden="true"></span>
+          Kushal Neupane - ePortfolio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMain" aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsMain">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html" data-nav="home">Full Stack</a></li>
+            <li class="nav-item"><a class="nav-link" href="html.html" data-nav="html">HTML</a></li>
+            <li class="nav-item"><a class="nav-link" href="css.html" data-nav="css">CSS</a></li>
+            <li class="nav-item"><a class="nav-link" href="bootstrap.html" data-nav="bootstrap">Bootstrap</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript.html" data-nav="javascript">JavaScript</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-sm btn-outline-light ms-lg-2" href="project.html" data-nav="project">JS Project</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <header class="mb-4">
+        <h1 class="display-6">JavaScript Project: Number Detector</h1>
+        <p class="lead">Detects even/odd, prime, palindrome, sign (positive/negative/zero), and computes factors. Keeps a history log.</p>
+      </header>
+
+      <section class="mb-4">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-4">
+            <label for="projectInput" class="form-label">Enter an integer</label>
+            <input type="number" id="projectInput" class="form-control" placeholder="e.g., 28">
+          </div>
+          <div class="col-md-8">
+            <div class="btn-group flex-wrap" role="group" aria-label="Detector controls">
+              <button class="btn btn-success" id="btnAllChecks">Run All Checks</button>
+              <button class="btn btn-danger" id="btnClear">Clear</button>
+              <button class="btn btn-outline-dark" id="btnExport">Export History (JSON)</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-4">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <h2 class="h5 mb-3">Results</h2>
+            <ul id="resultsList" class="list-group list-group-flush"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <h2 class="h5 mb-3">History</h2>
+            <div class="table-responsive">
+              <table class="table table-striped align-middle">
+                <thead class="table-success">
+                  <tr>
+                    <th>#</th>
+                    <th>Input</th>
+                    <th>Even/Odd</th>
+                    <th>Prime</th>
+                    <th>Palindrome</th>
+                    <th>Sign</th>
+                    <th>Factors</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody id="historyBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a class="btn btn-outline-danger mt-4" href="index.html">Back to Home</a>
+    </main>
+    <footer class="py-4 mt-5 border-top bg-white">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 d-flex align-items-center gap-2">
+          <span class="nc-dot" aria-hidden="true"></span>
+          <span>&copy; <span id="year"></span> Kushal Neupane - Full stack Development </span>
+        </p>
+        <div class="d-flex align-items-center gap-3">
+          <a class="link-dark" href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap Docs</a>
+          <a class="link-dark" href="project.html">Number Detector</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- App JS -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,115 @@
+/* ================================
+   NC-Themed Portfolio Styles
+   ================================ */
+
+/* Root variables for NC theme */
+:root {
+  --nc-red: #d90429;
+  --nc-green: #0b7a32;
+  --nc-white: #ffffff;
+  --nc-dark: #1c1c1c;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+/* ================================
+   Navbar
+   ================================ */
+.nc-navbar {
+  background: linear-gradient(90deg, var(--nc-red), var(--nc-green));
+}
+.nc-navbar .navbar-brand,
+.nc-navbar .nav-link {
+  color: #fff !important;
+}
+.nc-navbar .nav-link.active,
+.nc-navbar .nav-link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Badge & Dot */
+.nc-badge, 
+.nc-dot {
+  display: inline-block;
+  border-radius: 50%;
+}
+.nc-badge {
+  width: 14px; 
+  height: 14px;
+  background: radial-gradient(circle at 30% 30%, #fff, #fff 40%, var(--nc-red) 41%);
+}
+.nc-dot {
+  width: 10px; 
+  height: 10px; 
+  background: var(--nc-green);
+}
+
+/* ================================
+   Hero Section Stripe Accent
+   ================================ */
+.nc-hero {
+  border-top: 6px solid var(--nc-red);
+  border-bottom: 6px solid var(--nc-green);
+  background-image: linear-gradient(135deg, rgba(217,4,41,.05), rgba(11,122,50,.05));
+}
+
+/* ================================
+   Cards
+   ================================ */
+.nc-card {
+  border-top: 4px solid var(--nc-red);
+}
+.nc-card a {
+  color: var(--nc-green);
+}
+
+/* ================================
+   Color Palette Blocks (CSS Demo)
+   ================================ */
+.color-red {
+  background: var(--nc-red);
+  color: white;
+}
+.color-green {
+  background: var(--nc-green);
+  color: white;
+}
+.color-white {
+  background: var(--nc-white);
+  border: 2px solid #000;
+}
+
+/* ================================
+   Hover Card Animations (CSS Demo)
+   ================================ */
+.demo-anim {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+}
+.demo-anim:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.12);
+}
+
+/* ================================
+   Flexbox Demo Grid (CSS Demo)
+   ================================ */
+.demo-grid {
+  display: flex; 
+  gap: 1rem; 
+  flex-wrap: wrap;
+}
+.demo-grid .box {
+  flex: 1 1 clamp(120px, 20%, 200px);
+  aspect-ratio: 1/1;
+  display: grid; 
+  place-items: center;
+  border-radius: 1rem;
+  border: 2px dashed var(--nc-green);
+  background: rgba(11,122,50,.05);
+  font-weight: 700;
+}
